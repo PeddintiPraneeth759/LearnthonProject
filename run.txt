@@ -1,0 +1,6 @@
+cd c:\Learning_LLMs\LearnthonProject\backend
+python -m uvicorn main:app --reload --port 8000
+
+
+cd c:\Learning_LLMs\LearnthonProject\frontend
+npm run dev
