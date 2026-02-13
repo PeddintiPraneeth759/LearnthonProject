@@ -121,7 +121,8 @@ body::before {
    ======================================== */
 .header {
   padding: var(--spacing-lg) var(--spacing-xl);
-  background: var(--glass-bg);
+background: #020024;
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
   backdrop-filter: blur(20px);
   border-bottom: 1px solid var(--glass-border);
   position: sticky;
