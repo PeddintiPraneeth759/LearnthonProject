@@ -40,7 +40,7 @@ Example: 'Scientists discover water on Mars' or 'New study claims coffee cures a
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
           >
-            <span className="btn-icon">🔍</span>
+  
             {loading ? 'Verifying...' : 'Verify Claim'}
           </motion.button>
         </div>
