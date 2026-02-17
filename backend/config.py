@@ -4,7 +4,7 @@ Configuration for Fake News Verification API
 import os
 from dotenv import load_dotenv
 
-load_dotenv()
+load_dotenv(override=True)
 
 # API Keys
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY", "AIzaSyD0Pr97plYcTfWdBE4MI7HvAceM_rWGzDk")
@@ -13,7 +13,7 @@ OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY", "sk-or-v1-843492e4042e4a427
 
 # LLM Configuration
 OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1"
-LLM_MODEL = "tngtech/deepseek-r1t2-chimera:free"
+LLM_MODEL = "arcee-ai/trinity-large-preview:free"
 
 # App Configuration
 APP_NAME = "Fake News Verification API"

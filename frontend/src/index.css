@@ -147,7 +147,8 @@ body::before {
 .logo-icon {
   width: 48px;
   height: 48px;
-  background: var(--accent-gradient);
+  background: #020024;
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
   border-radius: var(--radius-lg);
   display: flex;
   align-items: center;

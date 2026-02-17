@@ -35,7 +35,16 @@ class NewsVerifier:
             openai_api_key=OPENROUTER_API_KEY,
             openai_api_base=OPENROUTER_BASE_URL,
             temperature=0.1,
-            max_tokens=4000
+            default_headers={
+                "HTTP-Referer": "https://factcheck-ai.vercel.app",
+                "X-Title": "Fake News Verify"
+            },
+            model_kwargs={
+                "extra_headers": {
+                    "HTTP-Referer": "https://factcheck-ai.vercel.app",
+                    "X-Title": "Fake News Verify"
+                }
+            }
         )
         
         # Build the verification graph
